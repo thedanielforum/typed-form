@@ -1,4 +1,4 @@
-# parsedForm
+# typed-form
 
 ## badges
-[![GoDoc](https://godoc.org/github.com/thedanielforum/parsedForm?status.svg)](https://godoc.org/github.com/thedanielforum/parsed-form)
+[![GoDoc](https://godoc.org/github.com/thedanielforum/typed-form?status.svg)](https://godoc.org/github.com/thedanielforum/typed-form)
