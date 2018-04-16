@@ -1,0 +1,13 @@
+version: 2
+jobs:
+  build-job:
+    docker:
+      - image: circleci/golang:1.9
+        environment:
+          RUN_ENV: test
+    working_directory: /go/src/app
+    steps:
+      - checkout
+      - run: go get -v -t -d ./...
+      - run: go test -v ./...
+      - run: go build .
