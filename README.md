@@ -1,7 +1,7 @@
 # typed-form
 
 ## badges
-[![GoDoc](https://godoc.org/github.com/thedanielforum/typed-form?status.svg)](https://godoc.org/github.com/thedanielforum/typed-form)
+[![GoDoc](https://godoc.org/github.com/thedanielforum/typed-form?status.svg)](https://godoc.org/github.com/thedanielforum/typed-form) [![CircleCI](https://circleci.com/gh/thedanielforum/typed-form.svg?style=svg)](https://circleci.com/gh/thedanielforum/typed-form)
 
 ## How to use
 ```go
