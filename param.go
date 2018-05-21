@@ -1,10 +1,27 @@
 package form
 
-import "strconv"
+import (
+	"strconv"
+	"strings"
+)
 
 // GetParamString returns param from key as string
 func (f *Form) GetParamString(k string) string {
 	return f.c.Param(k)
+}
+
+// GetParamBool gets key in bool format
+// 'true' and '1' will be considered to be true
+// every other value will return false
+func (f *Form) GetParamBool(k string) bool {
+	v := f.c.Param(k)
+	if strings.ToLower(v) == "true" {
+		return true
+	}
+	if strings.ToLower(v) == "1" {
+		return true
+	}
+	return false
 }
 
 // GetParamInt returns param from key as int

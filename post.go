@@ -1,10 +1,27 @@
 package form
 
-import "strconv"
+import (
+	"strconv"
+	"strings"
+)
 
 // GetString gets key in string format
 func (f *Form) GetString(k string) string {
 	return f.c.PostForm(k)
+}
+
+// GetBool gets key in bool format
+// 'true' and '1' will be considered to be true
+// every other value will return false
+func (f *Form) GetBool(k string) bool {
+	v := f.c.PostForm(k)
+	if strings.ToLower(v) == "true" {
+		return true
+	}
+	if strings.ToLower(v) == "1" {
+		return true
+	}
+	return false
 }
 
 // GetInt gets key in int format
