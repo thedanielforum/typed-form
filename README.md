@@ -1,6 +1,5 @@
 # typed-form
 
-## badges
 [![GoDoc](https://godoc.org/github.com/thedanielforum/typed-form?status.svg)](https://godoc.org/github.com/thedanielforum/typed-form) [![CircleCI](https://circleci.com/gh/thedanielforum/typed-form.svg?style=svg)](https://circleci.com/gh/thedanielforum/typed-form)
 
 ## How to use
@@ -39,4 +38,12 @@ form.GetParamInt8("key")
 form.GetParamInt16("key")
 form.GetParamInt32("key")
 form.GetParamInt64("key")
+
+// Get query param
+form.GetQueryString("key")
+form.GetQueryInt("key")
+form.GetQueryInt8("key")
+form.GetQueryInt16("key")
+form.GetQueryInt32("key")
+form.GetQueryInt64("key")
 ```
